@@ -2,8 +2,8 @@
 github加速神器，解决github打不开、用户头像无法加载、git-clone、git-pull、git-push失败等问题。
 
 
-### 1 写在前面
-* **Mylhgithub不具备“翻墙”功能,也没有相关的计划**
+### 1 前言
+* **Mylhgithub不具有“翻墙”功能，也没有相关的计划**
 * **Mylhgithub不支持Windows7等已被发行方停止支持的操作系统，并且也不会主动提供支持**
 * **Mylhgithub不能为您的游戏加速**
 * **Mylhgithub不能对文件下载进行加速**
@@ -12,12 +12,12 @@ github加速神器，解决github打不开、用户头像无法加载、git-clon
 #### 2.1 windows-x64桌面
 * 双击运行MylhGithub.UI.exe 
 
-#### 2.2 windows-x64服务 
-* `Mylhgithub.exe start` // 以windows服务安装并启动
-* `Mylhgithub.exe stop` // 以windows服务卸载并删除
+#### 2.2 Windows-x64 服务 
+* `Mylhgithub.exe start` // 以Windows服务安装并启动
+* `Mylhgithub.exe stop` // 以Windows服务卸载并删除
 
 #### 2.3 linux-x64终端
-* `sudo ./Mylhgithub`
+* `以超级用户权限运行./Mylhgithub`
 * 设置系统自动代理为`http://127.0.0.1:38457`，或手动代理http/https为`127.0.0.1:38457`
 * 浏览器打开`http://127.0.0.1:38458`即可查看MylhGithub运行状态监控窗口
   
@@ -32,20 +32,20 @@ github加速神器，解决github打不开、用户头像无法加载、git-clon
 * 安装cacert/Mylhgithub.cer并设置信任
 * 设置系统自动代理为`http://127.0.0.1:38457`，或手动代理http/https为`127.0.0.1:38457`
 * 浏览器打开`http://127.0.0.1:38458`即可查看MylhGithub运行状态监控窗口
-* [具体配置详情](https://github.com/mylhdmj/doc/Github/blob/master/MacOSXConfig.md)
+* [具体配置详情](https://github.com/mylhdmj/doc/blob/main/Github/MacOSXConfig.md)
  
 ### 3 软件功能 
 * 提供域名的纯净IP解析；
 * 提供IP测速并选择最快的IP；
-* 提供域名的tls连接自定义配置；
-* google的CDN资源替换，解决大量国外网站无法加载js和css的问题；
+* 提供域名的TLS连接自定义配置；
+* 替换谷歌的CDN资源，解决大量国外网站无法加载js和css的问题；
   
 ### 4 证书验证
 #### 4.1 git
-git操作提示`SSL certificate problem`</br>
-需要关闭git的证书验证：`git config --global http.sslverify false`
+git操作提示`SSL 证书问题`</br>
+需要关闭git的证书验证：``git config --global http.sslverify false``
 
-#### 4.2 firefox
+#### 4.2 火狐浏览器
 firefox提示`连接有潜在的安全问题`</br>
 设置->隐私与安全->证书->查看证书->证书颁发机构，导入cacert/Mylhgithub.cer，勾选“信任由此证书颁发机构来标识网站”
   
